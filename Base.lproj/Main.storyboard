@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon background" translatesAutoresizingMaskIntoConstraints="NO" id="xdi-fg-cI8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="uVG-zY-XKw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPA-2T-RDG" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="236"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you desire?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tw2-HR-ciC">
+                                                <rect key="frame" x="75.5" y="100" width="263.5" height="36"/>
+                                                <color key="backgroundColor" red="0.89402025939999996" green="0.8941736817" blue="0.89401060340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.89402025939999996" green="0.8941736817" blue="0.89401060340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.010600734150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Tw2-HR-ciC" firstAttribute="centerX" secondItem="lPA-2T-RDG" secondAttribute="centerX" id="AHd-PH-7qk"/>
+                                            <constraint firstItem="Tw2-HR-ciC" firstAttribute="centerY" secondItem="lPA-2T-RDG" secondAttribute="centerY" id="Lj5-ag-zSG"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZI-BQ-Hrc" userLabel="Middle View">
+                                        <rect key="frame" x="0.0" y="291" width="414" height="236"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-YW-A1C">
+                                                <rect key="frame" x="94" y="5.5" width="226" height="225"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Zhg-YW-A1C" firstAttribute="centerX" secondItem="DZI-BQ-Hrc" secondAttribute="centerX" id="IPu-6l-bXe"/>
+                                            <constraint firstItem="Zhg-YW-A1C" firstAttribute="centerY" secondItem="DZI-BQ-Hrc" secondAttribute="centerY" id="bTM-eN-D0B"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NzF-P3-x7S" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="582" width="414" height="236"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKx-O2-JQd">
+                                                <rect key="frame" x="139" y="93.5" width="136" height="49"/>
+                                                <color key="backgroundColor" red="0.89402025939999996" green="0.8941736817" blue="0.89401060340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="34"/>
+                                                <state key="normal" title="I Choose...">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ycf-6a-cy5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dKx-O2-JQd" firstAttribute="centerY" secondItem="NzF-P3-x7S" secondAttribute="centerY" id="MBa-kf-5PJ"/>
+                                            <constraint firstItem="dKx-O2-JQd" firstAttribute="centerX" secondItem="NzF-P3-x7S" secondAttribute="centerX" id="ZGH-zg-xNn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uVG-zY-XKw" secondAttribute="bottom" id="9ga-bt-nQa"/>
+                            <constraint firstItem="uVG-zY-XKw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BvT-Ax-Fpb"/>
+                            <constraint firstItem="uVG-zY-XKw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Jll-Ll-SIR"/>
+                            <constraint firstItem="uVG-zY-XKw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SMl-cc-fJt"/>
+                            <constraint firstItem="xdi-fg-cI8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Tb4-jX-5If"/>
+                            <constraint firstAttribute="trailing" secondItem="xdi-fg-cI8" secondAttribute="trailing" id="bWO-o5-Dy5"/>
+                            <constraint firstItem="xdi-fg-cI8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d06-VD-Yvu"/>
+                            <constraint firstAttribute="bottom" secondItem="xdi-fg-cI8" secondAttribute="bottom" id="duF-YD-csi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Zhg-YW-A1C" id="i20-87-VVP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball1" width="226" height="225"/>
+        <image name="pokemon background" width="382.5" height="214.5"/>
+    </resources>
+</document>
